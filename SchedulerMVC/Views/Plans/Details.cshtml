@@ -1,0 +1,35 @@
+﻿@model SchedulerMVC.Models.Plan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Описание заметки</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Note
+        </dt>
+
+        <dd class="notewidth">
+            @Model.Note
+        </dd>
+
+        <dt>
+            Date
+        </dt>
+
+        <dd>
+            @Model.Date.ToShortDateString()
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Редактировать", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Вернуться к списку", "AllNote")
+</p>
+<hr />

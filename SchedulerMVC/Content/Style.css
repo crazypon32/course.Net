@@ -1,0 +1,37 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+textarea {
+    width: 700px;
+    height: 150px;
+    word-break: break-all;
+    resize: none;
+}
+
+.datewidth {
+    max-width: 150px;
+}
+
+.notewidth {
+    max-width: 700px;
+    word-break: break-all;
+}
+
+dd.deleteDd{
+    margin-left: 170px; /* Отступ слева */
+    margin-bottom: 20px; /* Расстояние между терминами */
+}
+
+dt.deleteDt {
+    float: left; /* Выстраиваем по горизонтали */
+    width: 150px; /* Ширина термина */
+    text-align: right; /* Выравниваем вправо */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}

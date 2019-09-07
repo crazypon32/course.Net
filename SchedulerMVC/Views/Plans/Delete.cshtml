@@ -1,0 +1,34 @@
+﻿@model SchedulerMVC.Models.Plan
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h3>Вы действительно хотите удалить эту заметку?</h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl>
+        <dt class="deleteDt">
+            Note
+        </dt>
+        <dd class="notewidth deleteDd">
+            @Model.Note
+        </dd>
+        <dt class="deleteDt">
+            Date
+        </dt>
+        <dd class="deleteDd">
+            @Model.Date.ToShortDateString()
+        </dd>
+    </dl>
+    @using (Html.BeginForm())
+    {
+        <div style="margin-left: 120px">
+            <input type="submit" value="Удалить" class="btn btn-default" />
+            <a href="/Plans/AllNote" type="button" class="btn btn-default">Вернутся к списку</a>
+        </div>
+    }
+    <hr />
+</div>
+
